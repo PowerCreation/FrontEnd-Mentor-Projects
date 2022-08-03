@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit";
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    color: hsl(215, 28%, 47%);
+    font-size: 18px;
+}
+
+/* SOSSY */
+.container {
+    background-color: hsl(216, 50%, 16%);
+    margin: 3rem 1.5rem;
+    border-radius: 1rem;
+    padding: 1.3rem;
+}
+.img-container {
+    position: relative;
+}
+.icon-view {
+    position: absolute;
+    background-color: hsl(178, 100%, 50%, 60%);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.icon-view:hover {
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.icon-view img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nft-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+.title {
+    color: white;
+    margin: 1rem 0px;
+}
+.description {
+    margin-bottom: 1.3rem;
+}
+/* SOSSY */
+.amnt {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.speed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.crypto {
+    margin-left: 5px;
+}
+.amount {
+    color: aqua;
+}
+/* SOSSY */
+.line {
+    background-color: hsl(215, 32%, 27%);
+    height: 1px;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.person-container {
+    display: flex;
+    align-items: center;
+}
+.person-img {
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.author {
+    color: white;
+}
+
+
+
+/* HOVER STATES */
+.title:hover, .author:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+
+
+/* ATTRIBUTION */
+.attribution { font-size: 0.9rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); text-decoration: none;}
+.cashy:hover {color: orangered;}
+
+
+@media (min-width: 600px){
+    .container {
+        max-width: 400px;
+    }
+}
+@media (max-width: 280px){
+    body {
+        font-size: 0.9rem;
+    }
+}
