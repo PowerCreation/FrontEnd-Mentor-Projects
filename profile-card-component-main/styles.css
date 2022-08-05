@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Kumbh Sans', sans-serif; 
+    background-color: hsl(185, 75%, 39%);
+}
+main {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-card-img img {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    max-width: 100%;
+    height: auto;
+}
+.profile-pic-container {
+    display: flex;
+    justify-content: center;
+    margin: -60px 0;
+}
+.profile-pic {
+    border-radius: 50%;
+    border: 5px solid white;
+    display: block;
+}
+.profile-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.person-info {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.age {
+    font-weight: 400;
+}
+.age, .city, .cash {
+    color: hsl(0, 0%, 59%);
+}
+.name, .num {
+    color: hsl(229, 23%, 23%);
+    font-size: 25px;
+}
+
+.flp {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+}
+.flp div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    height: 1px;
+    background-color: lightgray;
+    border: none;
+}
+
+/* Responsiveness */
+@media (max-width: 375px){
+    body {
+        font-size: 13px;
+    }
+    .name, .num {
+        font-size: 18px;
+    }
+    .profile-card {
+        margin: 0px 1rem;
+    }
+}
+@media (max-width: 1400px){
+    .circles{
+        position: absolute;
+    }
+}
+
+/* CIRCLES */
+.circles img{
+   position: absolute;
+   z-index: -2;
+}
+.c1 {
+    top: -300px;
+    left: -175px;
+}
+.c2 {
+    bottom: -400px;
+    right: -175px;
+}
+
+/* ATTRIBUTION */
+.attribution { font-size: 1rem; text-align: center; margin-top: 2.5rem;}
+.attribution a { color: hsl(0, 0%, 2%); text-decoration: none;}
+.cashy:hover {color: orangered;}
