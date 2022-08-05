@@ -6,7 +6,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://stellar-treacle-0054e6.netlify.app/
 
 
 ### Built with
