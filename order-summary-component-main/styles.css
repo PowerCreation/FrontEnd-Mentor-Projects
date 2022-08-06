@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+    text-align: center;
+    margin: 0px 2rem;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    background-color: white;
+    border-radius: 1.5rem;
+    max-width: 450px;
+}
+.content-container {
+    padding: 1.5rem 2rem 10px 2rem
+}
+.main-pic {
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+.title {
+    margin-bottom: 1.5rem;
+}
+.title, .plan {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+.description {
+    margin-bottom: 1rem;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.5rem;
+}
+.description, .price {
+    color: hsl(224, 23%, 55%);
+}
+.plan-container {
+    background-color: hsl(225, 100%, 98%);
+    padding: 1rem;
+    margin: 1.5rem 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.8rem;
+    flex-wrap: wrap;
+}
+.change-btn {
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+}
+.cash {
+    margin-right: 3rem;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.payment-btn {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.cancel-btn {
+    padding: 1rem;
+    cursor: pointer;
+    color: grey;
+    font-weight: bold;
+}
+
+/* HOVER STATES */
+.change-btn:hover {
+    text-decoration: none;
+}
+.cancel-btn:hover {
+    color: hsl(223, 47%, 23%);
+}
+.payment-btn:hover {
+    background-color: hsl(245, 75%, 52%);
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 375px){
+    body {
+       background-image: none;
+    }
+}
+@media (max-width: 440px){
+    .plan-container{
+        font-size: small;
+    }
+}
+@media (max-width: 400px){
+    .plan-container{
+        font-size: 0.7rem;
+    }
+}
+
+
+/* ATTRIBUTIONS */
+.attribution {
+    margin-top: 2.5rem;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.myself {
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+}
+.myself:hover {
+    color: brown;
+}
