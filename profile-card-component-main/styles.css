@@ -98,19 +98,33 @@ main {
     }
 }
 
+
 /* CIRCLES */
-.circles img{
-   position: absolute;
-   z-index: -2;
-}
 .c1 {
-    top: -300px;
-    left: -175px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 50vw;
+  
+    background-image: url("./images/bg-pattern-top.svg");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 .c2 {
-    bottom: -400px;
-    right: -175px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50vh;
+    width: 50vw;
+  
+    background-image: url("./images/bg-pattern-bottom.svg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
+
 
 /* ATTRIBUTION */
 .attribution { font-size: 1rem; text-align: center; margin-top: 2.5rem;}
