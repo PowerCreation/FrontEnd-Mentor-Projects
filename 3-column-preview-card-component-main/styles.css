@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Lexend Deca", sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: 0px 2rem;
+}
+.card {
+    background-color: aqua;
+    padding: 3rem;
+    position: relative;
+}
+.card1 {
+    background-color: hsl(31, 77%, 52%);
+}
+.card2 {
+    background-color: hsl(184, 100%, 22%);
+}
+.card3 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.title {
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    margin: 1.5rem 0px;
+    font-family: 'Big Shoulders Display', cursive;
+    letter-spacing: 2px;
+}
+.description {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 7rem;
+    line-height: 1.5rem;
+}
+.learn-btn {
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 1.7rem;
+    font-weight: 700;
+    position: absolute;
+    bottom: 2rem;
+}
+
+.card1 .learn-btn {
+    color: hsl(31, 77%, 52%);
+}
+.card2 .learn-btn {
+    color: hsl(184, 100%, 22%);
+}
+.card3 .learn-btn {
+    color: hsl(179, 100%, 13%);
+}
+
+
+/* ACTUVE STATES */
+.learn-btn:hover {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 725px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+    }
+}
+
+/* ATTRIBUTIONS */
+.attribution {
+    margin: 2.5rem auto;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.myself {
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+}
+.myself:hover {
+    color: brown;
+}
+@media (max-width: 375px){
+    .attribution {
+        text-align: center;
+    }
+}
